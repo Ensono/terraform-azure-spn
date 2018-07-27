@@ -15,3 +15,7 @@ variable "generate_password" {
 variable "spn_password" {
   default = ""
 }
+
+variable "create_resource" {
+  default = true
+}

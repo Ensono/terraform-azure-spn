@@ -11,7 +11,7 @@ resource "random_string" "spn_password" {
 resource "azurerm_azuread_application" "spn" {
   count    = "${var.create_resource ? 1 : 0 }"
   name     = "${var.spn_name}"
-  homepage = "${var.app_url}"
+  homepage = "${var.spn_url}"
 }
 
 resource "azurerm_azuread_service_principal" "spn" {
