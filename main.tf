@@ -2,7 +2,7 @@
 ##  AKS SPN
 ##################################################
 provider "azuread" {
-  version = "=0.1.0"
+  version = "~> 0.3"
 }
 
 resource "random_string" "spn_password" {
