@@ -10,6 +10,7 @@ variable "spn_expiry" {
 
 variable "generate_password" {
   default = true
+  type = bool
 }
 
 variable "spn_password" {
@@ -18,4 +19,5 @@ variable "spn_password" {
 
 variable "create_resource" {
   default = true
+  type = bool
 }
